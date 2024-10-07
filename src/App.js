@@ -11,42 +11,24 @@ import React from 'react';
 import {
   ScrollView,
   StatusBar,
-  Image,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 
-import Partit from './components/Partit/Partit';
-
 /** A la funció App, dins del return crearem la notra pantalla */
 const App = () => {
   return (
     <View>
-      <StatusBar />
-      <View>
-        <Text style={estils.titol}> Resultats Lliga 24/25 </Text>
-        <Image
-          height={undefined}
-          width={undefined}
-          source={require('./assets/img/valenciacf.png')}
-        />
-      </View>
+      <StatusBar/>
       <ScrollView>
         <View>
-          <Partit />
-          <Partit />
-          <Partit />
-          <Partit />
-          <Partit />
-          <Partit />
-          <Partit />
-          <Partit />
+          <Text style={estils.titol}> Poseu ací el que vulgueu ... </Text>
         </View>
       </ScrollView>
     </View>
   );
-};
+}
 
 /** En aquesta secció, crearem els estils a aplicar als nostres components */
 const estils = StyleSheet.create({
