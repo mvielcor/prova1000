@@ -8,27 +8,29 @@
 
 /** IMPORTEM les llibreries necessàries */
 import React from 'react';
-import {
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
+
+import Partit from './components/partit/Partit';
 
 /** A la funció App, dins del return crearem la notra pantalla */
 const App = () => {
   return (
     <View>
-      <StatusBar/>
+      <StatusBar />
       <ScrollView>
         <View>
-          <Text style={estils.titol}> Poseu ací el que vulgueu ... </Text>
+          <Text style={estils.titol}> Resultats Lliga 24-25 </Text>
+          <Partit e1='Valencia cf' e2='Betis' r1='5' r2='5'></Partit>
+          <Partit e1='Osasuna' e2='Oviedo' r1='5' r2='5'></Partit>
+          <Partit></Partit>
+          <Partit></Partit>
+          <Partit></Partit>
+
         </View>
       </ScrollView>
     </View>
   );
-}
+};
 
 /** En aquesta secció, crearem els estils a aplicar als nostres components */
 const estils = StyleSheet.create({
@@ -37,10 +39,12 @@ const estils = StyleSheet.create({
     paddingHorizontal: 24,
   },
   titol: {
+    fontFamily: 'JOKERMAN',
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: 'normal',
   },
   descripcio: {
+    fontFamily:'GIGI',
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
