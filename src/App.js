@@ -12,7 +12,7 @@ import {ScrollView, StatusBar, StyleSheet, Text, View} from 'react-native';
 
 import Partit from './components/partit/Partit';
 
-/** A la funció App, dins del return crearem la notra pantalla */
+/** A la funció App , dins del return crearem la notra pantalla */
 const App = () => {
   return (
     <View>
